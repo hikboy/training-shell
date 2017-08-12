@@ -1,0 +1,7 @@
+1. Never use test as the name of a variable or a shell script file
+
+2. When using = as an assignment operator, do not put blanks around it
+
+3. When using = as a comparison operator, you must put blanks around it
+
+4. When using if [ ] put spaces around the brackets
