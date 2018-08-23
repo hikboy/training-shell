@@ -1,0 +1,11 @@
+1. Shell Script Syntax Error: Unexpected End of File
+
+Edit: Note that the original post has been edited since this answer was written and has been reformatted. You should look at the history to see the original formatting to understand the context for this answer.
+
+This error occurs often when you have mismatched structure - that is, you do not have matching double quotes, matching single quotes, have not closed a control structure such as a missing fi with an if, or a missing done with a for.
+
+The best way to spot these is to use correct indentation, which will show you where you have a broken control structure, and syntax highlighting, which will show you where quotes are not matched.
+
+In this particular case, I can see you are missing a fi. In the latter part of your code, you have 5 ifs and 4 fis. However you also have a number of other problems - your backquoted touch /tmp/alert.txt... command is syntactically invalid, and you need a space before the closing bracket of an if test.
+
+Clean up your code, and errors start to stand out.
